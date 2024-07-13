@@ -74,3 +74,23 @@ export const allData = [
         img: image3
     },
 ]
+
+
+
+export const testimonialData = [
+    {
+        name: "Victor",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ratione corrupti obcaecati voluptatum atque. Corporis inventore aspernatur pariatur dolor! Cumque?",
+        img: "https://picsum.photos/101/101"
+    },
+    {
+        name: "Satya Narayan",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ratione corrupti obcaecati voluptatum atque. Corporis inventore aspernatur pariatur dolor! Cumque?",
+        img: "https://picsum.photos/102/102"
+    },
+    {
+        name: "Sachin Tendulker",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ratione corrupti obcaecati voluptatum atque. Corporis inventore aspernatur pariatur dolor! Cumque?",
+        img: "https://picsum.photos/103/103"
+    },
+]

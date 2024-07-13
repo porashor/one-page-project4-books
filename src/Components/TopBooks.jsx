@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { allData } from '../data/Data'
 import { FaStar } from 'react-icons/fa6'
+import Slider from 'react-slick';
+
 
 const TopBooks = () => {
+    const [wid, setWid] = useState(4)
+    const width = window.innerWidth
+    useEffect(()=>{
+        if(width > 1000){
+            setWid(4)
+        }else if(width > 500){
+            setWid(2)
+        }else{
+            setWid(1)
+        }
+    },[wid, width])
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: wid,
+        slidesToScroll: 1,
+      };
+      console.log(window.innerWidth)
   return (
     <div className='container py-10'>
       {/* card header */}
@@ -13,7 +34,8 @@ const TopBooks = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde veniam eveniet laborum voluptas dolorum sed iusto, corrupti ea ipsam!
             </p>
         </div>
-        <div className='w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+        <div className='w-[80%] mx-auto  grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+            <Slider {...settings}>
             {
                 allData.map((item, index)=>(
                     <div key={index} className='space-y-2'>
@@ -28,6 +50,7 @@ const TopBooks = () => {
                     </div>
                 ))
             }
+            </Slider>
         </div>
         <div className='text-center py-2'>
             <button className='text-white gradinet px-4 py-2 rounded-full hover:scale-105 duration-200'>View all books</button>
