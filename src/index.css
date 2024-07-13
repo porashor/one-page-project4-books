@@ -28,3 +28,13 @@ html {
 ::selection {
   @apply bg-primary text-white;
 }
+
+
+@layer components{
+  .gradinet-text{
+    @apply bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text
+  }
+  .gradinet{
+    @apply bg-gradient-to-r from-primary to-secondary 
+  }
+}

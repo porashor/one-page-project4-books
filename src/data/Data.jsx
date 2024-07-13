@@ -20,3 +20,57 @@ export const navLinks = [
         links: "post"
     },
 ]
+import { BiImageAdd } from "react-icons/bi"
+import image from "../assets/books/book1.jpg"
+import image2 from "../assets/books/book2.jpg"
+import image3 from "../assets/books/book3.jpg"
+export const cardData = [
+    {
+        img: image2,
+        title: "His Life",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde veniam eveniet laborum voluptas dolorum sed iusto, corrupti ea ipsam!"
+    },
+    {
+        img: image,
+        title: "Who's there",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde veniam eveniet laborum voluptas dolorum sed iusto, corrupti ea ipsam!"
+    },
+    {
+        img: image3,
+        title: "Lost Boy",
+        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde veniam eveniet laborum voluptas dolorum sed iusto, corrupti ea ipsam!"
+    },
+]
+
+export const allData = [
+    {
+        title: "Who's there",
+        writer: "Bracover",
+        rate: "5",
+        img: image
+    },
+    {
+        title: "His Life",
+        writer: "John",
+        rate: "4.5",
+        img: image2
+    },
+    {
+        title: "Lost boy",
+        writer: "listy",
+        rate: "4.7",
+        img: image3
+    },
+    {
+        title: "Well teacher",
+        writer: "lasky",
+        rate: "4.4",
+        img: image
+    },
+    {
+        title: "Whele hunter",
+        writer: "bestywrite",
+        rate: "4.5",
+        img: image3
+    },
+]
