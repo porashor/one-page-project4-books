@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import image from "../assets/books/book1.jpg"
 import image2 from "../assets/books/book2.jpg"
 import image3 from "../assets/books/book3.jpg"
@@ -30,9 +30,24 @@ const Hero = () => {
     backgroundSize: "cover",
     width: "100%"
   }
+  let currentIndex = 0;
+
+  function getNextItem() {
+    currentIndex = (currentIndex + 1) % data.length;
+    return currentIndex;
+  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPos(getNextItem())
+    }, 4000);
+
+    return () => {
+      clearInterval(interval); 
+    };
+  }, []);
   const info = data[pos]
   return (
-    <div style={bgimge} className='min-h-[550px] sm:min-h-[650px] bg-gray-100 flex items-center justify-center dark:bg-gray-950 dark:text-white duration-200'>
+    <div style={bgimge} className='min-h-[550px] sm:min-h-[650px] transition-all bg-gray-100 flex items-center justify-center dark:bg-gray-950 dark:text-white duration-200'>
       <div className='container pb-8 sm:pb-0'>
         <div className='grid grid-cols-1 sm:grid-cols-2'>
           <div className='order-2 sm:order-1'>

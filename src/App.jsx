@@ -9,9 +9,10 @@ import Testimonial from './Components/Testimonial'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Foother from './Components/Foother'
+import ImputData from './Components/Part/ImputData'
 const App = () => {
   return (
-    <div className='bg-white text-black dark:bg-gray-900 dark:text-white'>
+    <div className='bg-white text-black dark:bg-gray-900 dark:text-white relative'>
       <Navbar/>
       <Hero/>
       <BestBooks/>
@@ -20,6 +21,7 @@ const App = () => {
       <TopBooks/>
       <Testimonial/>
       <Foother/>
+      <ImputData/>
     </div>
   )
 }

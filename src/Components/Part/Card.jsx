@@ -1,9 +1,9 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
 
-const Card = ({key, img, title, des}) => {
+const Card = ({ img, title, des}) => {
   return (
-    <div key={key} className='rounded-2xl bg-white dark:bg-gray-800 hover:text-white realative duration-high group max-w-[300px] hover:bg-primary dark:hover:bg-primary'>
+    <div className='rounded-2xl bg-white dark:bg-gray-800 hover:text-white realative duration-high group max-w-[300px] hover:bg-primary dark:hover:bg-primary'>
         <div className='h-[100px]'>
             <img src={img} alt="bestBooks" className='max-w-[100px] block mx-auto transform -translate-y-1/4 group-hover:scale-105 duration-300 shadow-sm' />
         </div>
