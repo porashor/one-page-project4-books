@@ -8,6 +8,7 @@ import TopBooks from './Components/TopBooks'
 import Testimonial from './Components/Testimonial'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Foother from './Components/Foother'
 const App = () => {
   return (
     <div className='bg-white text-black dark:bg-gray-900 dark:text-white'>
@@ -18,6 +19,7 @@ const App = () => {
       <Online/>
       <TopBooks/>
       <Testimonial/>
+      <Foother/>
     </div>
   )
 }
