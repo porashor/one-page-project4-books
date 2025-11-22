@@ -1,23 +1,23 @@
 export const navLinks = [
     {
         name: "Home",
-        links: "home"
+        links: "#"
     },
     {
         name: "Information",
-        links: "information"
+        links: "#"
     },
     {
         name: "Contact",
-        links: "contact"
+        links: "#"
     },
     {
         name: "Blog",
-        links: "blog"
+        links: "#"
     },
     {
         name: "Post",
-        links: "post"
+        links: "#"
     },
 ]
 import { BiImageAdd } from "react-icons/bi"
