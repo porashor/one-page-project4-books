@@ -21,7 +21,7 @@ const App = () => {
       <TopBooks/>
       <Testimonial/>
       <Foother/>
-      <ImputData/>
+      {/* <ImputData/> */}
     </div>
   )
 }
